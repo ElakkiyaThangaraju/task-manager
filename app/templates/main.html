@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h1>TaskMaster</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard">
+        <header>
+            <h2>Welcome to Task Manager</h2>
+            <button id="addTaskBtn">+ Add Task</button>
+        </header>
+
+        <!-- Task List -->
+        <section id="taskList">
+            <h3>Your Tasks</h3>
+            <ul id="tasks"></ul>
+        </section>
+    </main>
+
+    <!-- Task Modal -->
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Task</h2>
+            <input type="text" id="taskInput" placeholder="Enter task name">
+            <button id="saveTask">Save Task</button>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="static/js/main.js"></script>
+</body>
+</html>

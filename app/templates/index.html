@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Organize Your Work</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">TaskMaster</h1>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        <div class="auth-buttons">
+            <button onclick="location.href='login.html'">Login</button>
+            <button class="signup" onclick="location.href='signup.html'">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h2>Boost Your Productivity with TaskMaster</h2>
+            <p>Manage your tasks efficiently and never miss a deadline.</p>
+            <button onclick="location.href='main.html'">Get Started</button>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Why Choose TaskMaster?</h2>
+        <div class="feature-container">
+            <div class="feature">
+                <h3>📅 Task Tracking</h3>
+                <p>Organize and prioritize tasks with ease.</p>
+            </div>
+            <div class="feature">
+                <h3>🤝 Team Collaboration</h3>
+                <p>Share tasks and collaborate in real-time.</p>
+            </div>
+            <div class="feature">
+                <h3>⏰ Smart Reminders</h3>
+                <p>Receive notifications for upcoming deadlines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About TaskMaster</h2>
+        <p>TaskMaster is a powerful task management tool designed to help individuals and teams stay organized, productive, and on top of their goals.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us at <a href="mailto:support@taskmaster.com">support@taskmaster.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 TaskMaster. All Rights Reserved.</p>
+    </footer>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
